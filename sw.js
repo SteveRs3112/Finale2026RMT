@@ -1,5 +1,5 @@
 /* Finale des Rallyes 2026 – service worker : application et cartes disponibles hors-ligne */
-const SHELL = "fr26-shell-v32", TILES = "fr26-tiles", FONTS = "fr26-fonts";
+const SHELL = "fr26-shell-v35", TILES = "fr26-tiles", FONTS = "fr26-fonts";
 const FILES = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(SHELL).then(c => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener("activate", e => {
